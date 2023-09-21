@@ -1,0 +1,16 @@
+{% extends "base.html" %}  <!-- C'est en supposant que vous avez un fichier "base.html" qui contient votre navbar et les autres éléments de base de votre page -->
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Bonjour, {{ user.username }}!</h1>
+    <p class="lead">Bienvenue sur votre page de profil de l'Api</p>
+    <hr class="my-4">
+    <p>Quelques détails sur votre compte :</p>
+    <ul>
+        
+        <li>Date d'inscription : {{ user.date_joined|date:"F d, Y" }}</li>
+        <!-- Vous pouvez ajouter plus de détails ici -->
+    </ul>
+    {% comment %} <a class="btn btn-primary btn-lg" href="#" role="button">Editer le profil</a> {% endcomment %}
+</div>
+{% endblock %}

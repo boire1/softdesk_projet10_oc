@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4">Inscription</h2>
+    <form method="post">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <label for="id_username">Nom d'utilisateur</label>
+            <input type="text" name="username" class="form-control" id="id_username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="id_date_of_birth">Date de naissance</label>
+            <input type="date" name="date_of_birth" class="form-control" id="id_date_of_birth" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="id_password1">Mot de passe</label>
+            <input type="password" name="password1" class="form-control" id="id_password1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="id_password2">Confirmez le mot de passe</label>
+            <input type="password" name="password2" class="form-control" id="id_password2" required>
+        </div>
+        
+        <div class="form-check">
+            <input type="checkbox" name="can_be_contacted" class="form-check-input" id="id_can_be_contacted">
+            <label class="form-check-label" for="id_can_be_contacted">Peut être contacté</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" name="can_data_be_shared" class="form-check-input" id="id_can_data_be_shared">
+            <label class="form-check-label" for="id_can_data_be_shared">Les données peuvent être partagées</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">S'inscrire</button>
+    </form>
+</div>
+{% endblock %}

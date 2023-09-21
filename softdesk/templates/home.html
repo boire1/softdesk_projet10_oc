@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Bienvenue sur SoftDesk!</h1>
+<p>
+    Ceci est votre plateforme de gestion de projets. Pour démarrer, veuillez vous <a href="{% url 'register' %}">inscrire</a> ou vous <a href="{% url 'login' %}">connecter</a>.
+</p>
+{% endblock %}
