@@ -18,11 +18,11 @@ Install Python 3.11.
 In your directory, open the console.
 
 Clone this repository.
-`git clone https://github.com/boire1`
+`git clone https://github.com/boire1/softdesk_projet10_oc`
 
-2. Navigate to the project directory: `cd rep....`.
+2. Navigate to the project directory by taping: cd `softdesk_projet10_oc`.
 
-    In this directory `rep...`, create a virtual environment.
+    In this directory `softdesk_projet10_oc`, create a virtual environment.
 
     Type: `python -m venv env`.
 
